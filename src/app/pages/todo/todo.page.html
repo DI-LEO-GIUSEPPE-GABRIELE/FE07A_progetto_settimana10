@@ -1,0 +1,9 @@
+<div id="divToDo" class="text-center">
+  <p class="text-center" *ngFor="let task of tasks">{{task.title}}<button type="button" class="btn rounded" (click)="completa(task)">✔️</button></p>
+  <input class="rounded" type="text" (input)="scriviTask($event)" />
+  <button class="btn btn-success" (click)="aggiungi()">+</button>
+</div>
+
+
+
+
